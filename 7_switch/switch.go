@@ -45,8 +45,9 @@ func main() {
 		fmt.Println("It's a weekday")
 	}
 
-	// type switch
+	// type switch, we can assign a function output to another or we can also store a function in a variable
 	whoAmI := func(i interface{}) {
+		// switch i.type()
 		switch t := i.(type) {
 		case int:
 			fmt.Println("I am an integer")

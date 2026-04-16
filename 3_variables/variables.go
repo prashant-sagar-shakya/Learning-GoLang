@@ -48,4 +48,12 @@ func main() {
 	var height3 float64
 	height3 = 5.9
 	fmt.Println(height3)
+
+	// we can also use var keyword to declare multiple variables
+	var name5, age4, isStudent4, height4 = "Prashant", 30, true, 5.9
+	fmt.Println(name5, age4, isStudent4, height4)
+
+	// we can also use := to declare multiple variables
+	name6, age5, isStudent5, height5 := "Prashant", 30, true, 5.9
+	fmt.Println(name6, age5, isStudent5, height5)
 }
