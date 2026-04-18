@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 // numbered sequence of specific length
-
+// arrays syntax: var arrayName [length]dataType
+// arrays are value types, not reference types
 func main() {
 	var nums [4]int // by default it will be initialized with 0
 	fmt.Println(len(nums))

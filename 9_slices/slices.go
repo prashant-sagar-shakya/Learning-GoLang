@@ -8,8 +8,7 @@ import (
 func main() {
 	// Slices are dynamic arrays, more flexible than arrays, more memory efficient than arrays
 	// Slices are more cache friendly, more performant than arrays
-
-	// make([]type, length, capacity) // capacity is optional, by default capacity is equal to length
+	// slice syntax: slice:=[]type{elements} or make([]type, length, capacity) // capacity is optional, by default capacity is equal to length
 	slice := make([]int, 5, 10) // it will create a slice of length 5 and capacity 10
 	fmt.Println(slice)
 	fmt.Println(len(slice))
@@ -79,7 +78,7 @@ func main() {
 
 	// append slice to slice
 	slice7 := []int{6, 7, 8, 9, 10}
-	slice6 = append(slice6, slice7...)
+	slice6 = append(slice6, slice7...) // what it will do is it will append all the elements of slice7 to slice6 at the end of slice6
 	fmt.Println(slice6)
 	fmt.Println(len(slice6))
 	fmt.Println(cap(slice6))
